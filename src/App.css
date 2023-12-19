@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-left{
+  background-color: rgba(0, 0, 255, 0.312);
+  flex: 1 1 40%;
+  height: 400px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-right{
+  background-color: rgba(165, 122, 42, 0.364);
+  flex: 1 1 40%;
+  height: 400px;
+}
+.summery-container{
+  background-color: rgba(255, 140, 0, 0.477);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px;
 }
-
-.App-link {
-  color: #61dafb;
+.ExpenselistContainer{
+  display: flex;
+  flex-direction: column;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.summary-list{
+  display: flex;
+  width: 750px;
+  justify-content: space-around;
+  background-color: rgba(127, 255, 212, 0.457);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.summary-list:hover{
+  background-color: rgba(75, 237, 183, 0.544);
+  color: grey;
+}
+.summary-list h3{
+  width: 100%;
 }
