@@ -17,7 +17,7 @@ const ExpenseSummery = () => {
         <h3>Amount</h3>
        </div>
        <div className='ExpenselistContainer'>
-       {entries.map((item)=>{
+       {entries?.map((item)=>{
         return <ExpenseSummeryList  key={item.id} {...item}/>
        })}
        </div>
